@@ -65,7 +65,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let nc = window?.rootViewController as? UINavigationController,
             let vc = nc.viewControllers.first as? ViewController {
             
-            vc.text = url.path
+            var path = url.path
+            path.removeFirst("/reddit".count)
+            vc.text = path
         }
     }
 }
