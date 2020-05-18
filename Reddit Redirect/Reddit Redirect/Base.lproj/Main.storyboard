@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Di-Zk-Mq2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reddit-->
+        <scene sceneID="2ur-iS-IUS">
+            <objects>
+                <viewController storyboardIdentifier="ViewControllerId" id="97U-01-vqP" customClass="ViewController" customModule="redirect_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K9i-TO-6A2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYn-wU-Ov7">
+                                <rect key="frame" x="186" y="464.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zYn-wU-Ov7" firstAttribute="centerX" secondItem="cJ0-d7-YqN" secondAttribute="centerX" id="1Se-7R-vHc"/>
+                            <constraint firstItem="zYn-wU-Ov7" firstAttribute="centerY" secondItem="cJ0-d7-YqN" secondAttribute="centerY" id="g0x-rJ-MuJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cJ0-d7-YqN"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reddit" id="Ebe-02-0M1"/>
+                    <connections>
+                        <outlet property="label" destination="zYn-wU-Ov7" id="iB2-cO-JH7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wYi-fD-1Cv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="110"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pne-yH-J7o">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationControllerId" id="1Di-Zk-Mq2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bV1-4p-OC6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="97U-01-vqP" kind="relationship" relationship="rootViewController" id="5ef-NM-T5L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bBY-rw-5aG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-706" y="110"/>
+        </scene>
+    </scenes>
+</document>
